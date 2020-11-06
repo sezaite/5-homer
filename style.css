@@ -5,49 +5,71 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
 body {
-    background-color: white;
+    background-color: #F5F1D6 ;
 }
+
+    body > div {
+        width: 700px;
+        margin-left: calc( (100% - 700px) / 2);
+        margin-top: 70px;
+        /* background-color: rgb(226, 59, 59); */
+        display: inline-block;
+    }
 
     main {
         float: left;
-        width: 50%;
-        margin-left: 10%;
-        margin-top: 70px;;
-
+        width: 60%;
+        /* background-color: seashell; */
     }
 
         h1 {
             color: #951C22;
             font-size: 120px;
-
+            margin-left: 35px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            line-height: 1em;
         }
 
-        div {
-            background-color: #DDD9BD;
+        main > div {
+            display: inline-block;
+            background-color: #E4E0C7;
             width: 100%;
-            border-radius: 50px;
+            border-radius: 35px;
             height: 70px;
 
+
         }
 
-            h2 {
-
+            div > h2 {
+                display: inline-block;
+                font-size: 32px;
+                line-height: 1em;
+                /* background-color: rgb(39, 173, 106); */
+                margin-top: 9px;
+                margin-left: 35px;
+                width: 100%;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             }
 
-            h3 {
+           div > h3 {
+            display: inline-block;
                 color: #951C22;
+                font-size: 20px;
+                line-height: 1em;
+                /* background-color: turquoise; */
+                margin-left: 35px;
 
             }
 
         p {
-            margin-left: 20px;
+            display: inline-block;
+            margin-left: 35px;
 
         }
 
         ul {
-            margin-left: 60px;
+            margin-left: 65px;
         }
 
             li {
@@ -59,14 +81,16 @@ body {
         }
 
     img {
+        transform: scaleX(-1);
         float: left;
-        width: 30%;
-        margin-right: 10%;
-        margin-top: 70px;
-        
+        width: 40%;
+        /* background-color: rebeccapurple; */
+        margin-left: -70px;
+        z-index: 2;
     }
 
     a {
         text-decoration: none;
         color: #951C22;
+        font-weight: bold;
     }
